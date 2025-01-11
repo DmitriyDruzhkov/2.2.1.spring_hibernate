@@ -39,7 +39,7 @@ public class MainApp {
          System.out.println();
       }
 
-      User user = userService.findUserByCarModelAndSeries("Audi", 100);
+      User user = userService.findUser("Audi", 100);
       System.out.println(user.getFirstName());
       context.close();
    }

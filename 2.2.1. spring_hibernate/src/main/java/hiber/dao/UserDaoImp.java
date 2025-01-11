@@ -21,9 +21,6 @@ public class UserDaoImp implements UserDao {
    }
 
    @Override
-   public void add(Car car) {sessionFactory.getCurrentSession().save(car);}
-
-   @Override
    @SuppressWarnings("unchecked")
    public List<User> listUsers() {
       TypedQuery<User> query=sessionFactory.getCurrentSession().createQuery("from User");
